@@ -10,6 +10,8 @@ if("${CMAKE_BUILD_TYPE}" STREQUAL "")
     set(CMAKE_BUILD_TYPE "Debug")
 endif()
 
+add_definitions(-DUSE_QPEP_MULTI)
+
 if("${CMAKE_SYSTEM_NAME}" STREQUAL "Darwin")
     set(CMAKE_CXX_COMPILER clang++)
     set(CMAKE_C_COMPILER clang)
